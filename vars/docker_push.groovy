@@ -1,4 +1,4 @@
-def call ( String Project , String ImageTag, String dockerhub){
+def call ( String Project , String ImageTag, String dockerHubUser){
   withCredentials([usernamePassword(
                     credentialsId:"dockerhub-credencial",
                     usernameVariable:"dockerHubUser", 
